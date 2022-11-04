@@ -1,48 +1,88 @@
+
 package Automovel;
 
+import java.util.Scanner;
+
 public class moto extends Automovel {
-    public moto(){
-        super(cor, valor, ano, marca);
-    }
+    
+    String estado;
+    int polegadas;
 
-    //configurando o get porque as variáveis são privadas
-    public String getCor(){
-        return cor;
-    }
+   public moto(){
+    super(cor, valor, ano, marca);
+   }
+   
+   public String getCor(){
+    return cor;
+}
 
-    //configurando o set porque as variáveis são privadas
-    public String setCor(String Cor){
-        return cor = Cor;
+public String setCor(String c) {
+    System.out.println("coloque uma cor");
+    try (Scanner Dadoinformado = new Scanner(System.in)) {
+        String c2 = Dadoinformado.nextLine();
+        return cor = c2;
     }
+}
 
-    //configurando o get porque as variáveis são privadas
-    public Double getValor() {
-        return valor;
+public double getValor(){
+    return valor;
+}
+
+public double setValor(double v) {
+    System.out.println("Coloque um valor");
+    try (Scanner Dadoinformado = new Scanner(System.in)) {
+        double v2 = Dadoinformado.nextDouble();
+        return valor = v2;
     }
+}
 
-    //configurando o set porque as variáveis são privadas
-    public Double setValor(Double Valor) {
-        return valor = Valor;
+
+public int getAno(){
+    return ano;
+}
+
+public int setAno(int a) {
+    System.out.println("Coloque um ano");
+    try (Scanner Dadoinformado = new Scanner(System.in)) {
+        int a2 = Dadoinformado.nextInt();
+        return ano = a2;
     }
+}
 
-    //configurando o get porque as variáveis são privadas
-    public int getAno() {
-        return ano;
+
+public String getMarca(){
+    return marca;
+}
+
+public String setMarca(String m) {
+    System.out.println("Coloque uma marca");
+    try (Scanner Dadoinformado = new Scanner(System.in)) {
+        String m2 = Dadoinformado.nextLine();
+        return marca = m2;
     }
+}
 
-    //configurando o set porque as variáveis são privadas
-    public int setAno(int Ano) {
-        return ano = Ano;
+public int getPolegada(){
+    return polegadas;
+}
+
+public int setPolegada(int p){
+    System.out.println("Coloque o tamanho da roda");
+    try (Scanner Dadoinformado = new Scanner(System.in)) {
+        int p2 = Dadoinformado.nextInt();
+        return polegadas = p2;
     }
+}
 
-    //configurando o get porque as variáveis são privadas
-    public String getMarca() {
-        return marca;
+public String getEstado(){
+    return estado;
+}
+
+public String setEstado(String e){
+    System.out.println("Estado do carro:");
+    try (Scanner Dadoinformado = new Scanner(System.in)) {
+        String e2 = Dadoinformado.nextLine();
+        return estado = e2;
     }
-
-    //configurando o set porque as variáveis são privadas
-    public String setMarca(String Marca) {
-        return marca = Marca;
-    }
-
+}
 }
