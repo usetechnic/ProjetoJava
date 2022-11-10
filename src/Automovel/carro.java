@@ -15,9 +15,10 @@ public class carro extends Automovel {
 
 public String setCor(String c) {
     System.out.println("coloque uma cor");
-    Scanner Dadoinformado = new Scanner(System.in);
-    String c2 = Dadoinformado.nextLine();
-    return cor = c2;
+    try (Scanner Dadoinformado = new Scanner(System.in)) {
+        String c2 = Dadoinformado.nextLine();
+        return cor = c2;
+    }
 }
 
 public double getValor(){
@@ -26,9 +27,10 @@ public double getValor(){
 
 public double setValor(double v) {
     System.out.println("Coloque um valor");
-    Scanner Dadoinformado = new Scanner(System.in);
-    double v2 = Dadoinformado.nextDouble();
-    return valor = v2;
+    try (Scanner Dadoinformado = new Scanner(System.in)) {
+        double v2 = Dadoinformado.nextDouble();
+        return valor = v2;
+    }
 }
 
 
@@ -38,9 +40,10 @@ public int getAno(){
 
 public int setAno(int a) {
     System.out.println("Coloque um ano");
-    Scanner Dadoinformado = new Scanner(System.in);
-    int a2 = Dadoinformado.nextInt();
-    return ano = a2;
+    try (Scanner Dadoinformado = new Scanner(System.in)) {
+        int a2 = Dadoinformado.nextInt();
+        return ano = a2;
+    }
 }
 
 
@@ -50,9 +53,10 @@ public String getMarca(){
 
 public String setMarca(String m) {
     System.out.println("Coloque uma marca");
-    Scanner Dadoinformado = new Scanner(System.in);
-    String m2 = Dadoinformado.nextLine();
-    return marca = m2;
+    try (Scanner Dadoinformado = new Scanner(System.in)) {
+        String m2 = Dadoinformado.nextLine();
+        return marca = m2;
+    }
 }
 
 public String getPolegada(){
@@ -60,9 +64,10 @@ public String getPolegada(){
 }
 public String setPolegada(String t){
     System.out.println("Coloque o tamanho da roda");
-    Scanner Dadoinformado = new Scanner(System.in);
-    String t2 = Dadoinformado.nextLine();
-    return tracao = t2;
+    try (Scanner Dadoinformado = new Scanner(System.in)) {
+        String t2 = Dadoinformado.nextLine();
+        return tracao = t2;
+    }
 }
 }
 

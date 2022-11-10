@@ -1,4 +1,4 @@
-package Assistente Virtual;
+package AssistenteVirtual;
 
 public class Assistente {
     
